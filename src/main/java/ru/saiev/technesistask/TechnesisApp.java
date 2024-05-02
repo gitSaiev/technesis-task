@@ -10,12 +10,12 @@ import java.io.IOException;
 public class TechnesisApp extends Application {
 
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TechnesisApp.class.getResource("fxml/main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage primaryStage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(TechnesisApp.class.getResource("/fxml/main.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 345);
+        primaryStage.setTitle("Technesis: \"Cоздание заявок\"");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
